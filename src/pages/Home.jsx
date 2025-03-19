@@ -18,7 +18,7 @@ function Home() {
 
   return (
     <>
-     <Navbar/>
+     <Navbar/>  
 
         <ListaCards lista={entrenamientos}/>
         <EstadoEntrenamiento/>
