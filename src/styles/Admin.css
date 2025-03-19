@@ -1,0 +1,16 @@
+.dias{
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+.descripcion{
+    width: 96%;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

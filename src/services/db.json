@@ -1,5 +1,64 @@
 {
-    "usuario":[
-
-    ]
+  "usuarios": [
+    {
+      "id": "dd7f",
+      "nombre": "dilii",
+      "email": "dilii@gmail.com",
+      "password": "dilii",
+      "edad": "12",
+      "peso": "12",
+      "genero": "mujel",
+      "estatura": "12"
+    }
+  ],
+  "entrenos": [
+    {
+      "id": "0",
+      "tipoEntreno": "Pista",
+      "tiempoAEntrenar": "30min",
+      "descripcion": "DESCRIPCIÓN DEL ENTRENO"
+    },
+    {
+      "id": "6c97",
+      "tipoEntreno": "Fuerza",
+      "tiempoAEntrenar": "martes",
+      "descripcion": "Cualquier cosa"
+    },
+    {
+      "id": "fbf8",
+      "tipoEntreno": "sextso",
+      "tiempoAEntrenar": "viernes",
+      "descripcion": "sextso"
+    },
+    {
+      "id": "4717",
+      "tipoEntreno": "hola",
+      "tiempoAEntrenar": "",
+      "descripcion": "agua cate"
+    },
+    {
+      "id": "7065",
+      "tipoEntreno": "limon",
+      "tiempoAEntrenar": "",
+      "descripcion": "escola"
+    },
+    {
+      "id": "4410",
+      "tipoEntreno": "agua",
+      "tiempoAEntrenar": "",
+      "descripcion": "cate"
+    },
+    {
+      "id": "3946",
+      "tipoEntreno": "agua",
+      "tiempoAEntrenar": "",
+      "descripcion": "cate"
+    },
+    {
+      "id": "c8f2",
+      "tipoEntreno": "Espalda y Hombro",
+      "tiempoAEntrenar": "miércoles",
+      "descripcion": "Jalon al pecho, Polea y laterales"
+    }
+  ]
 }

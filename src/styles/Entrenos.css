@@ -1,0 +1,24 @@
+.cuadritos {
+    text-align: center;
+    height: auto;
+    width: 300px; 
+    background-color:#f5e460;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+.listita {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
