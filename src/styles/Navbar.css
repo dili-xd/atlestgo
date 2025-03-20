@@ -2,9 +2,6 @@
        justify-content: space-between;
         align-items: center;
         padding: 15px;
-        background: #333;
+        background:#f5e460;
         color: white;
 }  
-.cont-titulo{
-    margin-top: 65vh;
-}

@@ -1,0 +1,42 @@
+
+.label {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    display: block;
+   
+}
+
+.buton {
+    padding: 10px 15px;
+    font-size: 16px;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+
+    button{
+        padding: 5px;
+    }
+    button:hover {
+        background-color: #FFD700; 
+    }
+    
+}
+.box{
+    position: relative;
+    right: 45vw;
+}
+.cont-box{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.comentario{
+    width: 20%;
+    height: 20%;
+}
+
+

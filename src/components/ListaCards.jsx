@@ -9,6 +9,7 @@ function ListaCards({lista}) {
         {lista.map((entreno)=>{
             return(
             <CardEntreno
+            
               key={entreno.id}
                 titulo={entreno.tipoEntreno}
                 descripcion={entreno.descripcion}

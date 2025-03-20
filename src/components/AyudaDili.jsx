@@ -3,9 +3,7 @@ const AyudaDili = () => {
 
 <>
 <div>
-
-
-    <input type="text" />
+  solo en cristo
 </div>
 
 
