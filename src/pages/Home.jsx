@@ -4,7 +4,7 @@ import ListaCards from '../components/ListaCards'
 import Navbar from '../components/Navbar'
 import CardEntreno from '../components/CardEntreno'
 import EstadoEntrenamiento from '../components/EstadoEntrenamiento'
-
+import ModalC from '../components/ModalC'
 function Home() {
     const [entrenamientos,setEntrenamientos] =useState([])
 
@@ -20,9 +20,7 @@ function Home() {
     <>
      <Navbar/>  
 
-        <ListaCards lista={entrenamientos}/>
-        <EstadoEntrenamiento/>
-
+        <ListaCards lista={entrenamientos} />
     </>
   )
 }

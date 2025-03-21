@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/Entrenos.css"
 
-function CardEntreno({img,titulo,descripcion,tiempoEntreno}) {
+function CardEntreno({img,titulo,descripcion,tiempoEntreno,btnModal}) {
   return (
     <>
     
@@ -16,7 +16,7 @@ function CardEntreno({img,titulo,descripcion,tiempoEntreno}) {
                 <p>{descripcion}</p>
                 <p>{tiempoEntreno}</p>
             </article>
-            <button className='boton'>Ir</button>
+            <button onClick={btnModal} className='boton'>Ir</button>
         </div>
     </>
   )

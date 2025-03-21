@@ -25,12 +25,6 @@
       "descripcion": "Cualquier cosa"
     },
     {
-      "id": "fbf8",
-      "tipoEntreno": "sextso",
-      "tiempoAEntrenar": "viernes",
-      "descripcion": "sextso"
-    },
-    {
       "id": "4717",
       "tipoEntreno": "hola",
       "tiempoAEntrenar": "",
@@ -59,54 +53,23 @@
       "tipoEntreno": "Espalda y Hombro",
       "tiempoAEntrenar": "miércoles",
       "descripcion": "Jalon al pecho, Polea y laterales"
-    },
+    }
+  ],
+  "estado": [
     {
-      "id": "04a8",
-      "tipoEntreno": "sexsto pero anal",
-      "tiempoAEntrenar": "jueves",
-      "descripcion": "sexto anal duro"
-    },
-    {
-      "id": "3a5a",
-      "tipoEntreno": "sexsto pero anal",
-      "tiempoAEntrenar": "jueves",
-      "descripcion": "sexto anal duro"
-    },
-    {
-      "id": "e3b7",
-      "tipoEntreno": "sexsto pero anal",
-      "tiempoAEntrenar": "jueves",
-      "descripcion": "sexto anal duro"
-    },
-    {
-      "id": "abef",
-      "tipoEntreno": "sexsto pero anal",
-      "tiempoAEntrenar": "jueves",
-      "descripcion": "sexto anal duro"
-    },
-    {
-      "id": "6648",
-      "tipoEntreno": "sexsto pero anal",
-      "tiempoAEntrenar": "jueves",
-      "descripcion": "sexto anal duro"
-    },
-    {
-      "id": "2ce7",
-      "tipoEntreno": "sexsto pero anal",
-      "tiempoAEntrenar": "jueves",
-      "descripcion": "sexto anal duro"
-    },
-    {
-      "id": "8e50",
-      "tipoEntreno": "sexsto pero anal",
-      "tiempoAEntrenar": "jueves",
-      "descripcion": "sexto anal duro"
-    },
-    {
-      "id": "6a09",
-      "tipoEntreno": "sexsto pero anal",
-      "tiempoAEntrenar": "jueves",
-      "descripcion": "sexto anal duro"
+      
+      "id": "6a41",
+      "suenio": 1,
+      "fatiga": 1,
+      "esfuerzo": 1,
+      "dolorMuscular": 1,
+      "vigor": 1,
+      "entusiasmo": 1,
+      "irritabilidad": 1,
+      "estres": 1,
+      "competencia": "on",
+      "enfermedad": "on",
+      "idEntreno": "7065"
     }
   ]
 }
