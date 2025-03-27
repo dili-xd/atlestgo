@@ -19,6 +19,7 @@
     button{
         padding: 5px;
     }
+    
     button:hover {
         background-color: #FFD700; 
     }
@@ -37,5 +38,4 @@
 .comentario{
     height: 50%;
 }
-
 

@@ -7,14 +7,15 @@ import Ayuda from "../pages/Ayuda";
 
 import ListaCards from "../components/ListaCards";
 import CardEntreno from "../components/CardEntreno";
+import RutasPrivadas from "./RutasPrivadas";
 function Routing(){
     return(
     <Router>
         <Routes>
             <Route path="/" element={<Login/>}/>
             <Route path="/Register" element={<Registro/>}/>
-            <Route path="/home" element={<Home/>}/>
-            <Route path="/admin" element={<Admin/>}/>
+            <Route path="/home" element={<RutasPrivadas children={<Home/>}/>}/>
+            <Route path="/admin" element={<RutasPrivadas children={<Admin/>}/>}/>
             <Route path="/Ayuda" element={<Ayuda/>}/>
 
             

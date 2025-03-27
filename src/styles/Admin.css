@@ -1,16 +1,58 @@
 .dias{
-    background-color: yellow;
+    background-color:#f5e460;
     color: black;
     cursor: pointer;
 }
 .descripcion{
     width: 96%;
     padding: 10px;
-    background-color: yellow;
+    background-color:#f5e460;
     color: black;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  
 }
+.listaa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boton1{
+    
+        width: 30%;
+        padding: 10px;
+        background-color: rgb(248, 248, 239);
+        color: black;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        margin: 5px;
+
+}
+.boton1:hover {
+    background-color: #f4dde8;
+  }
+  .input1{
+    background-color: #f5e460;
+  }
+  .contenedorz{
+  
+  
+  }
+  .titleDia{
+border: wheat 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background:#f5e460;
+    color: white;
+    
+
+  }
+  

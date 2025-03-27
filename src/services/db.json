@@ -8,56 +8,55 @@
       "edad": "12",
       "peso": "12",
       "genero": "mujel",
-      "estatura": "12"
+      "estatura": "12",
+      "rol": "admin"
+    },
+    {
+      "id": "bc13",
+      "nombre": "barry",
+      "email": "barry@gmail.com",
+      "password": "1234",
+      "edad": "15",
+      "peso": "95",
+      "genero": "M",
+      "estatura": "170",
+      "rol": "usuario"
     }
   ],
   "entrenos": [
-    {
-      "id": "0",
-      "tipoEntreno": "Pista",
-      "tiempoAEntrenar": "30min",
-      "descripcion": "DESCRIPCIÓN DEL ENTRENO"
-    },
-    {
-      "id": "6c97",
-      "tipoEntreno": "Fuerza",
-      "tiempoAEntrenar": "martes",
-      "descripcion": "Cualquier cosa"
-    },
-    {
-      "id": "4717",
-      "tipoEntreno": "hola",
-      "tiempoAEntrenar": "",
-      "descripcion": "agua cate"
-    },
-    {
-      "id": "7065",
-      "tipoEntreno": "limon",
-      "tiempoAEntrenar": "",
-      "descripcion": "escola"
-    },
-    {
-      "id": "4410",
-      "tipoEntreno": "agua",
-      "tiempoAEntrenar": "",
-      "descripcion": "cate"
-    },
-    {
-      "id": "3946",
-      "tipoEntreno": "agua",
-      "tiempoAEntrenar": "",
-      "descripcion": "cate"
-    },
     {
       "id": "c8f2",
       "tipoEntreno": "Espalda y Hombro",
       "tiempoAEntrenar": "miércoles",
       "descripcion": "Jalon al pecho, Polea y laterales"
+    },
+    {
+      "id": "3c77",
+      "tipoEntreno": "Agua",
+      "tiempoAEntrenar": "domingo",
+      "descripcion": "Agua"
+    },
+    {
+      "id": "925d",
+      "tipoEntreno": "uno",
+      "tiempoAEntrenar": "miércoles",
+      "descripcion": "uno"
+    },
+    {
+      "id": "2d71",
+      "tipoEntreno": "uno",
+      "tiempoAEntrenar": "miércoles",
+      "descripcion": "uno"
+    },
+    {
+      "id": "1268",
+      "tipoEntreno": "",
+      "tiempoAEntrenar": "",
+      "descripcion": ""
     }
   ],
   "estado": [
     {
-      
       "id": "6a41",
       "suenio": 1,
       "fatiga": 1,
@@ -70,6 +69,79 @@
       "competencia": "on",
       "enfermedad": "on",
       "idEntreno": "7065"
+    },
+    {
+      "id": "4569",
+      "suenio": 6,
+      "fatiga": 6,
+      "esfuerzo": 4,
+      "dolorMuscular": 10,
+      "vigor": 4,
+      "entusiasmo": 1,
+      "irritabilidad": 0,
+      "estres": 3,
+      "competencia": "on",
+      "enfermedad": "on",
+      "idEntreno": "4410"
+    },
+    {
+      "id": "2db6",
+      "suenio": 10,
+      "fatiga": 10,
+      "esfuerzo": 10,
+      "dolorMuscular": 10,
+      "vigor": 5,
+      "entusiasmo": 5,
+      "irritabilidad": 5,
+      "estres": 5,
+      "competencia": "on",
+      "enfermedad": "on",
+      "idEntreno": "4717"
+    },
+    {
+      "id": "e215",
+      "suenio": 10,
+      "fatiga": 10,
+      "esfuerzo": 10,
+      "dolorMuscular": 10,
+      "vigor": 5,
+      "entusiasmo": 5,
+      "irritabilidad": 5,
+      "estres": 5,
+      "competencia": "on",
+      "enfermedad": "on",
+      "idEntreno": "6c97",
+      "idUsuario": "dd7f"
+    },
+    {
+      "id": "a150",
+      "suenio": 7,
+      "fatiga": 6,
+      "esfuerzo": 5,
+      "dolorMuscular": 5,
+      "vigor": 5,
+      "entusiasmo": 5,
+      "irritabilidad": 5,
+      "estres": 5,
+      "competencia": "on",
+      "enfermedad": "etrtr",
+      "idEntreno": "925d",
+      "idUsuario": "dd7f"
+    },
+    {
+      "id": "d264",
+      "suenio": 8,
+      "fatiga": 6,
+      "esfuerzo": 5,
+      "dolorMuscular": 4,
+      "vigor": 3,
+      "entusiasmo": 3,
+      "irritabilidad": 3,
+      "estres": 3,
+      "competencia": "on",
+      "enfermedad": "na",
+      "idEntreno": "c8f2",
+      "idUsuario": "bc13"
     }
   ]
 }

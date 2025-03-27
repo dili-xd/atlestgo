@@ -6,6 +6,7 @@ function Navbar() {
     <div className='cont-titulo'>
       <h1 className='titulo'>Atletsgo</h1>
     </div>
+    
   )
 }
 

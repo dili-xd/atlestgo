@@ -26,7 +26,8 @@ function FormularioRegistro() {
       "edad":edad,
       "peso":peso,
       "genero":genero,
-      "estatura":estatura 
+      "estatura":estatura,
+      "rol": usuario
     }
     await posData(usuario, "usuarios");
   }
@@ -35,8 +36,17 @@ function FormularioRegistro() {
     const datos = await getInfo("usuarios")
     const usuarioValido = datos.find(usuario=>usuario.nombre === nombreUsuario && usuario.password === claveUsuario && usuario.email === correoUsuario)
 
-    if(usuarioValido){
+    if(usuarioValido.rol === "usuario"){
       navigate("/home");
+      localStorage.setItem("idUsuario",usuarioValido.id)
+      console.log(usuarioValido);
+      console.log(usuarioValido.rol);
+      return
+    }else if(usuarioValido.rol === "admin"){
+      navigate("/admin");
+      console.log(usuarioValido);
+      console.log(usuarioValido.rol);
+      localStorage.setItem("admin",true)
     }
    
   }
