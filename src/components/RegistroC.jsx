@@ -52,7 +52,7 @@ function FormularioRegistro() {
   }
   return (
     <div className="contenedor">
-      <h1 className="titulo">Atletsgo</h1>
+      <h1 className="tituloC">Atletsgo</h1>
       {/* CREAR CUENTA */}
         <h2 className="nobotones"><span onClick={()=>setMostrar(false)}>Iniciar sesión</span> / <span onClick={()=>setMostrar(true)}>Crear cuenta</span></h2>
         {mostrar &&
@@ -67,7 +67,10 @@ function FormularioRegistro() {
             <input type="number" placeholder="Estatura" onChange={(e) => setEstatura(e.target.value)} />
           </div>
           <input type="text" placeholder="Género" onChange={(e) => setGenero(e.target.value)} />
-          <button className="boton" onClick={guardarDatos}>Crear cuenta</button>
+          <button className="botonS" onClick={()=>{
+            alert('Cuenta Creada');
+            guardarDatos();
+          }}>Crear cuenta</button>
         </form>
       </div>
     }
@@ -82,7 +85,7 @@ function FormularioRegistro() {
           <input type="text" placeholder="Nombre completo" onChange={(e) => setNombreUsuario(e.target.value)} />
           <input type="email" placeholder="Correo electrónico" onChange={(e) => setCorreoUsuario(e.target.value)} />
           <input type="password" placeholder="Contraseña" onChange={(e) => setClaveUsuario(e.target.value)} />
-          <button className="boton" onClick={validarUsuario}>Ingresar</button>
+          <button className="botonA" onClick={validarUsuario}>Ingresar</button>
           </form>
           </div>
         </>
@@ -90,7 +93,7 @@ function FormularioRegistro() {
       }
       <div>
         <p ><Link className="link" to="/Ayuda">Ayuda?</Link></p>
-        <p><strong>Página hecha por Dilii</strong></p>
+        <p className="pagina"><strong>Página hecha por Dilii</strong></p>
       </div>
     </div>
   );

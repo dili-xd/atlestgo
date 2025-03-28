@@ -20,11 +20,15 @@ body {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-.titulo {
-  font-size: 26px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 15px;
+.tituloC {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;   
+  text-transform: uppercase;
+  color: #222;
+  text-align: center;
+  position: relative;
+  text-shadow: 3px 3px 0px #000, 
+   6px 6px 0px #343333;   
 }
 
 .formulario {
@@ -36,6 +40,9 @@ body {
   color: #444;
   margin-bottom: 12px;
   cursor: pointer;
+  font-family: cursive;
+  
+
 }
 
 input {
@@ -64,7 +71,7 @@ input:focus {
   width: 50%;
 }
 
-.boton {
+.botonA {
   width: 100%;
   padding: 12px;
   background-color: #fadbe4;
@@ -77,7 +84,7 @@ input:focus {
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-.boton:hover {
+.botonA:hover {
   background-color: hwb(326 60% 2%);
   transform: scale(1.03);
 }
@@ -91,8 +98,29 @@ footer {
 .link {
   color: #222;
   text-decoration: none;
+  font-family: cursive;
 }
 
 .link:hover {
   text-decoration: underline;
+}
+.botonS{
+  width: 100%;
+  padding: 12px;
+  background-color: #fadbe4;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+.botonS:hover{
+
+ background-color: hwb(326 60% 2%);
+  transform: scale(1.03);
+}
+.pagina{
+  font-family: cursive;
 }

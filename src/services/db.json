@@ -21,6 +21,28 @@
       "genero": "M",
       "estatura": "170",
       "rol": "usuario"
+    },
+    {
+      "id": "19e3",
+      "nombre": "ruth",
+      "email": "ruth@gmail.com",
+      "password": "ruth",
+      "edad": "12",
+      "peso": "21",
+      "genero": "mujel",
+      "estatura": "12",
+      "rol": "usuario"
+    },
+    {
+      "id": "6f61",
+      "nombre": "ruth",
+      "email": "ruth@gmail.com",
+      "password": "ruth",
+      "edad": "12",
+      "peso": "21",
+      "genero": "mujel",
+      "estatura": "12",
+      "rol": "usuario"
     }
   ],
   "entrenos": [
@@ -32,9 +54,9 @@
     },
     {
       "id": "3c77",
-      "tipoEntreno": "Agua",
-      "tiempoAEntrenar": "domingo",
-      "descripcion": "Agua"
+      "tipoEntreno": "2x3",
+      "tiempoAEntrenar": "martes",
+      "descripcion": "Fuerza"
     },
     {
       "id": "925d",
@@ -47,12 +69,6 @@
       "tipoEntreno": "uno",
       "tiempoAEntrenar": "miércoles",
       "descripcion": "uno"
-    },
-    {
-      "id": "1268",
-      "tipoEntreno": "",
-      "tiempoAEntrenar": "",
-      "descripcion": ""
     }
   ],
   "estado": [
@@ -142,6 +158,115 @@
       "enfermedad": "na",
       "idEntreno": "c8f2",
       "idUsuario": "bc13"
+    },
+    {
+      "id": "93cd",
+      "suenio": 6,
+      "fatiga": 4,
+      "esfuerzo": 8,
+      "dolorMuscular": 4,
+      "vigor": 5,
+      "entusiasmo": 4,
+      "irritabilidad": 2,
+      "estres": 5,
+      "competencia": "on",
+      "enfermedad": "on",
+      "idEntreno": "3c77",
+      "idUsuario": "bc13"
+    },
+    {
+      "id": "c893",
+      "suenio": 1,
+      "fatiga": 1,
+      "esfuerzo": 1,
+      "dolorMuscular": 1,
+      "vigor": 1,
+      "entusiasmo": 1,
+      "irritabilidad": 1,
+      "estres": 1,
+      "competencia": "on",
+      "enfermedad": "Diarrrea cronica expulcion anal",
+      "idEntreno": "3c77",
+      "idUsuario": "bc13"
+    },
+    {
+      "id": "5ddb",
+      "suenio": 1,
+      "fatiga": 1,
+      "esfuerzo": 1,
+      "dolorMuscular": 1,
+      "vigor": 1,
+      "entusiasmo": 1,
+      "irritabilidad": 1,
+      "estres": 1,
+      "competencia": "on",
+      "enfermedad": "Diarrrea crónica expulcion anal",
+      "idEntreno": "3c77",
+      "idUsuario": "bc13"
+    },
+    {
+      "id": "163d",
+      "suenio": 6,
+      "fatiga": 8,
+      "esfuerzo": 4,
+      "dolorMuscular": 8,
+      "vigor": 1,
+      "entusiasmo": 4,
+      "irritabilidad": 3,
+      "estres": 5,
+      "competencia": "on",
+      "enfermedad": "on",
+      "idEntreno": "3c77",
+      "idUsuario": "bc13",
+      "comentario": "prueba"
+    },
+    {
+      "id": "eb98",
+      "suenio": 1,
+      "fatiga": 1,
+      "esfuerzo": 1,
+      "dolorMuscular": 1,
+      "vigor": 1,
+      "entusiasmo": 1,
+      "irritabilidad": 1,
+      "estres": 1,
+      "competencia": "on",
+      "enfermedad": "on",
+      "idEntreno": "c8f2",
+      "idUsuario": "bc13",
+      "comentario": ""
+    },
+    {
+      "id": "b975",
+      "suenio": 1,
+      "fatiga": 1,
+      "esfuerzo": 1,
+      "dolorMuscular": 1,
+      "vigor": 1,
+      "entusiasmo": 1,
+      "irritabilidad": 1,
+      "estres": 1,
+      "competencia": "on",
+      "enfermedad": "on",
+      "idEntreno": "c8f2",
+      "idUsuario": "bc13",
+      "comentario": ""
+    },
+    {
+      "id": "8e9d",
+      "suenio": 3,
+      "fatiga": 3,
+      "esfuerzo": 3,
+      "dolorMuscular": 3,
+      "vigor": 3,
+      "entusiasmo": 3,
+      "irritabilidad": 2,
+      "estres": 2,
+      "competencia": "on",
+      "enfermedad": "on",
+      "idEntreno": "c8f2",
+      "idUsuario": "bc13",
+      "comentario": ""
     }
   ]
 }

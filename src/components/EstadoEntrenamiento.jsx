@@ -13,7 +13,7 @@ function EstadoEntrenamiento() {
     const [estres, setEstres] = useState(0)
     const [competencia, setCompetencia] = useState(0)
     const [enfermedad, setEnfermedad] = useState(0)
-
+    const [comentario, setComentario] = useState("")
     async function enviarEntreno() {
         const entreno = {
             suenio: calSuenio,
@@ -27,16 +27,16 @@ function EstadoEntrenamiento() {
             competencia: competencia,
             enfermedad: enfermedad,
             idEntreno: localStorage.getItem("idEntreno"),
-            idUsuario: localStorage.getItem("idUsuario")
+            idUsuario: localStorage.getItem("idUsuario"),
+            comentario: comentario
         }
-        if (calSuenio === 0 || fatAcum === 0 || percpEsfuerzo === 0 || dolorMus  === 0  || vigor  === 0 
-        || entusiasmo  === 0 || irrirta  === 0 || estres  === 0 || competencia  === 0) 
-        {
-            alert("RELLENE LOS DATOS")   
+        if (calSuenio === 0 || fatAcum === 0 || percpEsfuerzo === 0 || dolorMus === 0 || vigor === 0
+            || entusiasmo === 0 || irrirta === 0 || estres === 0 || competencia === 0) {
+            alert("RELLENE LOS DATOS")
             return
         }
         await posData(entreno, "estado")
-}
+    }
     return (
         <>
             <label className='label' htmlFor="">Calidad de sueño</label>
@@ -147,22 +147,22 @@ function EstadoEntrenamiento() {
                     e.target.style.backgroundColor = "yellow"
                 }} className='csB'>2</button>
                 <button
-                onClick={(e) => {
-                    let btns = Array.from(document.querySelectorAll(".csB"))
-                    btns.forEach(function (btn) {
-                        btn.style.backgroundColor = "black";
-                    });
-                    setFatAcum(3)
-                    e.target.style.backgroundColor = "yellow"
-                }} className='csB'>3</button><button
-                onClick={(e) => {
-                    let btns = Array.from(document.querySelectorAll(".csB"))
-                    btns.forEach(function (btn) {
-                        btn.style.backgroundColor = "black";
-                    });
-                    setFatAcum(4)
-                    e.target.style.backgroundColor = "yellow"
-                }} className='csB'>4</button>
+                    onClick={(e) => {
+                        let btns = Array.from(document.querySelectorAll(".csB"))
+                        btns.forEach(function (btn) {
+                            btn.style.backgroundColor = "black";
+                        });
+                        setFatAcum(3)
+                        e.target.style.backgroundColor = "yellow"
+                    }} className='csB'>3</button><button
+                        onClick={(e) => {
+                            let btns = Array.from(document.querySelectorAll(".csB"))
+                            btns.forEach(function (btn) {
+                                btn.style.backgroundColor = "black";
+                            });
+                            setFatAcum(4)
+                            e.target.style.backgroundColor = "yellow"
+                        }} className='csB'>4</button>
                 <button onClick={(e) => {
                     let btns = Array.from(document.querySelectorAll(".csB"))
                     btns.forEach(function (btn) {
@@ -184,7 +184,7 @@ function EstadoEntrenamiento() {
                     btns.forEach(function (btn) {
                         btn.style.backgroundColor = "black";
                     });
-                   setFatAcum(6)
+                    setFatAcum(6)
                     e.target.style.backgroundColor = "yellow"
                 }} className='csB'>7</button>
                 <button onClick={(e) => {
@@ -215,14 +215,14 @@ function EstadoEntrenamiento() {
             <label className='label' htmlFor="">Percepcion de esfuerzo</label>
             <div className='buton'>
                 <button
-                onClick={(e) => {
-                    let btns = Array.from(document.querySelectorAll(".csC"))
-                    btns.forEach(function (btn) {
-                        btn.style.backgroundColor = "black";
-                    });
-                    setPercpEsfuerzo(1)
-                    e.target.style.backgroundColor = "yellow"
-                }} className='csC'>1</button>
+                    onClick={(e) => {
+                        let btns = Array.from(document.querySelectorAll(".csC"))
+                        btns.forEach(function (btn) {
+                            btn.style.backgroundColor = "black";
+                        });
+                        setPercpEsfuerzo(1)
+                        e.target.style.backgroundColor = "yellow"
+                    }} className='csC'>1</button>
                 <button onClick={(e) => {
                     let btns = Array.from(document.querySelectorAll(".csC"))
                     btns.forEach(function (btn) {
@@ -388,7 +388,7 @@ function EstadoEntrenamiento() {
                     setVigor(1)
                     e.target.style.backgroundColor = "yellow"
                 }} className='csE'>1</button>
-                <button  onClick={(e) => {
+                <button onClick={(e) => {
                     let btns = Array.from(document.querySelectorAll(".csE"))
                     btns.forEach(function (btn) {
                         btn.style.backgroundColor = "black";
@@ -396,7 +396,7 @@ function EstadoEntrenamiento() {
                     setVigor(2)
                     e.target.style.backgroundColor = "yellow"
                 }} className='csE' >2</button>
-                <button  onClick={(e) => {
+                <button onClick={(e) => {
                     let btns = Array.from(document.querySelectorAll(".csE"))
                     btns.forEach(function (btn) {
                         btn.style.backgroundColor = "black";
@@ -404,7 +404,7 @@ function EstadoEntrenamiento() {
                     setVigor(3)
                     e.target.style.backgroundColor = "yellow"
                 }} className='csE' >3</button>
-                <button  onClick={(e) => {
+                <button onClick={(e) => {
                     let btns = Array.from(document.querySelectorAll(".csE"))
                     btns.forEach(function (btn) {
                         btn.style.backgroundColor = "black";
@@ -412,7 +412,7 @@ function EstadoEntrenamiento() {
                     setVigor(4)
                     e.target.style.backgroundColor = "yellow"
                 }} className='csE' >4</button>
-                <button  onClick={(e) => {
+                <button onClick={(e) => {
                     let btns = Array.from(document.querySelectorAll(".csE"))
                     btns.forEach(function (btn) {
                         btn.style.backgroundColor = "black";
@@ -423,7 +423,7 @@ function EstadoEntrenamiento() {
             </div>
             <label className='label' htmlFor="">Entusiasmo</label>
             <div className='buton'>
-                <button  onClick={(e) => {
+                <button onClick={(e) => {
                     let btns = Array.from(document.querySelectorAll(".csF"))
                     btns.forEach(function (btn) {
                         btn.style.backgroundColor = "black";
@@ -431,7 +431,7 @@ function EstadoEntrenamiento() {
                     setEntusiasmo(1)
                     e.target.style.backgroundColor = "yellow"
                 }} className='csF' >1</button>
-                <button  onClick={(e) => {
+                <button onClick={(e) => {
                     let btns = Array.from(document.querySelectorAll(".csF"))
                     btns.forEach(function (btn) {
                         btn.style.backgroundColor = "black";
@@ -466,7 +466,7 @@ function EstadoEntrenamiento() {
             </div>
             <label className='label' htmlFor="">Irritabilidad</label>
             <div className='buton'>
-                <button  onClick={(e) => {
+                <button onClick={(e) => {
                     let btns = Array.from(document.querySelectorAll(".csG"))
                     btns.forEach(function (btn) {
                         btn.style.backgroundColor = "black";
@@ -557,11 +557,18 @@ function EstadoEntrenamiento() {
             <section className='cont-box' onChange={(e) => setEnfermedad(e.target.value)}>
                 <label htmlFor="">Enfermedad</label>
                 <input className='box' type="checkbox" />
-                <textarea className='comentario' name="" id=""></textarea>
+                <textarea className='comentario' name="" id="" onChange={(e) => setComentario(e.target.value)}></textarea>
             </section>
 
 
-            <button className='boton' onClick={enviarEntreno}>Enviar</button>
+            <button className='boton' onClick={() => {
+            alert('Entrenamiento enviado con éxito!');
+                enviarEntreno();
+            }}>
+                Enviar
+            </button>
+
+
 
 
 

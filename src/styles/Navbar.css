@@ -1,12 +1,30 @@
-.titulo{
-       justify-content: space-between;
-        align-items: center;
-        padding: 50px;
-        background:#f5e460;
-        color: white;
-       
-      
-} 
-.titulo{
-       
+.titulo {
+        margin-top: 20px;
+        position: relative;
+        top: 40px;
+}
+.titulo {
+        font-family: 'Anton', sans-serif;
+        font-size: 3.5rem; 
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #222;
+        text-align: center;
+        position: relative;
+        text-shadow: 3px 3px 0px #b7ac4a, 
+         6px 6px 0px #222;   
+        transition: transform 0.3s ease-in-out;
+
+    }
+.cont-titulo {
+        background: #f5e460;
+        padding: 29px;
+}
+
+.enlaceAyuda {
+        position: relative;
+        left: 90%;
+        color: #000;
+        font-family: cursive;
+
 }

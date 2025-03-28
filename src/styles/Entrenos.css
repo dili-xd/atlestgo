@@ -11,14 +11,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-        
+    right: 4px;
 }
 .listita {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    font-family: cursive;
+    
 }
+.boton{
+    width: 100%;
+    padding: 12px;
+    background-color: #f7c7d4;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+.boton:hover{
+    background-color: hwb(326 60% 2%);
+    transform: scale(1.03);
+
+}
+
 
 
 
