@@ -7,7 +7,9 @@ function Navbar() {
     <>
       <div className='cont-titulo'>
         <h1 className='titulo'>Atletsgo</h1>
-      <Link className='enlaceAyuda' to={"/"}>Ayuda</Link>
+      <Link className='enlaceAyuda' to={"/Ayuda"}>Ayuda</Link>
+      <hr />
+     
       </div>
     </>
   )

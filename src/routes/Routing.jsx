@@ -6,6 +6,8 @@ import Admin from "../pages/Admin";
 import Ayuda from "../pages/Ayuda";
 import RutasPrivadas from "./RutasPrivadas";
 import RutaAdmin from "./RutaAdmin";
+import Contactenos from "../components/Contactenos";
+
 function Routing(){
     return(
     <Router>
@@ -15,6 +17,9 @@ function Routing(){
             <Route path="/home" element={<RutasPrivadas children={<Home/>}/>}/>
             <Route path="/admin" element={<RutaAdmin children={<Admin/>}/>}/>
             <Route path="/Ayuda" element={<Ayuda/>}/>
+            <Route path="/contacto" element={<Contactenos/>}/>
+          
+            
 
             
 

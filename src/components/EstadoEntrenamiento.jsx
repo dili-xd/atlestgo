@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
 import "../styles/Estado.css"
 import { posData } from '../services/fetch'
+import Toastify from 'toastify-js'
 
 function EstadoEntrenamiento() {
+    /*
+        Definición de estados
+    */
     const [calSuenio, setCalSuenio] = useState(0)
     const [fatAcum, setFatAcum] = useState(0)
     const [percpEsfuerzo, setPercpEsfuerzo] = useState(0)
@@ -14,6 +18,13 @@ function EstadoEntrenamiento() {
     const [competencia, setCompetencia] = useState(0)
     const [enfermedad, setEnfermedad] = useState(0)
     const [comentario, setComentario] = useState("")
+
+
+    /*
+        Función que ordena todos los datos a enviar, los guarda en un objeto
+        y usa el método post para guardarlos en el db.json
+    */
+
     async function enviarEntreno() {
         const entreno = {
             suenio: calSuenio,
@@ -33,9 +44,10 @@ function EstadoEntrenamiento() {
         if (calSuenio === 0 || fatAcum === 0 || percpEsfuerzo === 0 || dolorMus === 0 || vigor === 0
             || entusiasmo === 0 || irrirta === 0 || estres === 0 || competencia === 0) {
             alert("RELLENE LOS DATOS")
-            return
         }
         await posData(entreno, "estado")
+        alert('Entrenamiento enviado con éxito!');
+
     }
     return (
         <>
@@ -562,7 +574,6 @@ function EstadoEntrenamiento() {
 
 
             <button className='boton' onClick={() => {
-            alert('Entrenamiento enviado con éxito!');
                 enviarEntreno();
             }}>
                 Enviar

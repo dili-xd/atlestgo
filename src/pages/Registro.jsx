@@ -1,5 +1,6 @@
 import React from 'react'
 import RegistroC from "../components/RegistroC"
+import Footer from '../components/Footer'
 
 
 function Registro() {
@@ -7,7 +8,7 @@ function Registro() {
    <>
    
    <RegistroC/>
-   
+   <Footer/>
    </>
   )
 }

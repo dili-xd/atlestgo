@@ -4,6 +4,7 @@ import "../styles/Admin.css"
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { Navbar } from 'react-bootstrap';
+import Footer from '../components/Footer';
 function Admin() {
     const [tipoEntrenamiento, setTipoEntrenamiento] = useState("")
     const [tiempoAEntrenar, setTiempoAEntrenar] = useState("")
@@ -14,17 +15,19 @@ function Admin() {
     const [show, setShow] = useState(false);
     const [tipoEntrenamientoE, setTipoEntrenamientoE] = useState("")
     const [tiempoAEntrenarE, setTiempoAEntrenarE] = useState("")
-    const [descripcionE, setDescripcionE] = useState    ("")
+    const [descripcionE, setDescripcionE] = useState("")
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    // useEffect para cargar los entrenamientos y comentarios cuando se monta el componente o cambia "recarga"
     useEffect(() => {
         async function traerEntrenos() {
             const datos = await getInfo("entrenos")
             setEntrenos(datos)
         }
         async function traerComentarios() {
+            // Función asíncrona para obtener los comentarios o estado de los entrenamientos
             const datos = await getInfo("estado")
             setEstado(datos)
         }
@@ -83,25 +86,25 @@ function Admin() {
                     <option value="domingo">Domingo</option>
                 </select>
 
-                <label  htmlFor="">Descripción</label>
+                <label htmlFor="">Descripción</label>
                 <textarea className='descripcion' onChange={(evento) => setDescripcion(evento.target.value)} name=""></textarea>
 
                 <button className='botonAggEntrenamiento' onClick={agregarEntreno}>Añadir entrenamiento</button>
             </div>
             <div className='contenedor-comentarios'>
-        <h3 className='comentariosTitulo'>Comentarios:</h3>
-            <div className='comentario-item'> 
-                {estado.map((entreno) => {
-                    return (
-                        <>
-                        <p className='parrafo' >{entreno.comentario}</p>
-                        <hr  className='lineaComenteario'/>
-                        </>
-                    )
-                })}
+                <h3 className='comentariosTitulo'>Comentarios:</h3>
+                <div className='comentario-item'>
+                    {estado.map((entreno) => {
+                        return (
+                            <>
+                                <p className='parrafo' >{entreno.comentario}</p>
+                                <hr className='lineaComenteario' />
+                            </>
+                        )
+                    })}
+                </div>
             </div>
-            </div>
-            
+
             <div className='listaa'>
                 {entrenos.map((entreno) => {
                     return (
@@ -152,10 +155,13 @@ function Admin() {
                     </Button>
                 </Modal.Footer>
             </Modal>
-             
+            <div className='cont-footer'>
+                <Footer />
+            </div>
         </>
     )
 }
 
 export default Admin;
+
 

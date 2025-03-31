@@ -3,6 +3,9 @@ import { getInfo, posData } from "../services/fetch";
 import { useNavigate, Link } from "react-router-dom";
 import "../styles/Registro.css";
 
+//La función guardarDatos recoge los datos del formulario, crea un objeto con ellos y
+// los envía al servidor usando una solicitud POST mediante la función posData. Además,
+// evita la recarga de la página al enviar el formulario.
 function FormularioRegistro() {
   const [nombre, setNombre] = useState("");
   const [correo, setCorreo] = useState("");
@@ -31,6 +34,7 @@ function FormularioRegistro() {
     }
     await posData(usuario, "usuarios");
   }
+  // Esta función valida e identifica el tipo de usuario que ingresa y redirige según su rol.
   async function validarUsuario(e) {
     e.preventDefault()
     const datos = await getInfo("usuarios")

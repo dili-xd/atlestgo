@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import EstadoEntrenamiento from './EstadoEntrenamiento';
 
+// ListaCards muestra tarjetas con info de entrenos. 
 function ListaCards({ lista }) {
   const [show, setShow] = useState(false);
 
@@ -47,6 +48,10 @@ function ListaCards({ lista }) {
         </Modal.Footer>
       </Modal>
     </>
+    // Esto muestra el estado del entrenamiento
+    //  Se abre con "show" y se cierra con "handleClose". Tiene un título, 
+    // el componente <EstadoEntrenamiento /> en el cuerpo y un botón para cerrarlo en el pie de página.
+
   )
 }
 

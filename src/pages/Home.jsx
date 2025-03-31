@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar'
 import CardEntreno from '../components/CardEntreno'
 import EstadoEntrenamiento from '../components/EstadoEntrenamiento'
 import ModalC from '../components/ModalC'
+import Footer from '../components/Footer'
 function Home() {
     const [entrenamientos,setEntrenamientos] =useState([])
 
@@ -22,6 +23,9 @@ function Home() {
      <Navbar/>  
 
         <ListaCards lista={entrenamientos} />
+
+
+      <Footer/>
     </>
   )
 }

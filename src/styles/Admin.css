@@ -146,3 +146,8 @@ bottom: 90px;
   align-items: center;
   top: 50px;
 }
+
+.cont-footer{
+  position: relative;
+  top: 51%;
+}
