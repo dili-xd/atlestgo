@@ -21,20 +21,36 @@
       "genero": "mujel",
       "estatura": "12",
       "rol": "usuario"
+    },
+    {
+      "id": "767e",
+      "nombre": "musso",
+      "email": "musso@gmail.com",
+      "password": "musso",
+      "edad": "1",
+      "peso": "3",
+      "genero": "niña",
+      "estatura": "12",
+      "rol": "usuario"
+    },
+    {
+      "id": "b8d2",
+      "nombre": "jeanca",
+      "email": "jeanca@gmail.com",
+      "password": "jeanca",
+      "edad": "21",
+      "peso": "52",
+      "genero": "Hombre",
+      "estatura": "1.65",
+      "rol": "usuario"
     }
   ],
   "entrenos": [
     {
       "id": "c8f2",
-      "tipoEntreno": "Espalda y Hombro",
-      "tiempoAEntrenar": "miércoles",
-      "descripcion": "Jalon al pecho, Polea y laterales"
-    },
-    {
-      "id": "3c77",
-      "tipoEntreno": "pato",
-      "tiempoAEntrenar": "jueves",
-      "descripcion": "Elsa"
+      "tipoEntreno": "jalon",
+      "tiempoAEntrenar": "sábado",
+      "descripcion": "pecho"
     }
   ],
   "estado": [
@@ -53,6 +69,22 @@
       "idEntreno": "c8f2",
       "idUsuario": "bc13",
       "comentario": "fiebre"
+    },
+    {
+      "id": "6c15",
+      "suenio": 7,
+      "fatiga": 3,
+      "esfuerzo": 6,
+      "dolorMuscular": 1,
+      "vigor": 3,
+      "entusiasmo": 5,
+      "irritabilidad": 1,
+      "estres": 1,
+      "competencia": "on",
+      "enfermedad": "xd",
+      "idEntreno": "c8f2",
+      "idUsuario": "b8d2",
+      "comentario": "xd"
     }
   ]
 }

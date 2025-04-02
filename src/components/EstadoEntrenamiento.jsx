@@ -1,7 +1,8 @@
+import Swal from "sweetalert2";
 import React, { useState } from 'react'
 import "../styles/Estado.css"
 import { posData } from '../services/fetch'
-import Toastify from 'toastify-js'
+
 
 function EstadoEntrenamiento() {
     /*
@@ -42,11 +43,22 @@ function EstadoEntrenamiento() {
             comentario: comentario
         }
         if (calSuenio === 0 || fatAcum === 0 || percpEsfuerzo === 0 || dolorMus === 0 || vigor === 0
-            || entusiasmo === 0 || irrirta === 0 || estres === 0 || competencia === 0) {
-            alert("RELLENE LOS DATOS")
+            || entusiasmo === 0 || irrirta === 0 || estres === 0 ) {
+            Swal.fire({
+                title: "Campos incompletos",
+                text: "Por favor, completa todos los campos.",
+                icon: "warning",
+                confirmButtonText: "OK",
+            });
+            return
         }
         await posData(entreno, "estado")
-        alert('Entrenamiento enviado con éxito!');
+        Swal.fire({
+            title: "Exito",
+            text: "Enviado con exito.",
+            icon: "success",
+            confirmButtonText: "OK",
+        });
 
     }
     return (

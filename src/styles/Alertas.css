@@ -1,0 +1,20 @@
+.alerta-cont{
+    width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 9999;
+     transition: all 0.3s ease-in-out;
+ }
+ .alerta-titulo{
+     font-size: 2rem;
+     color: #fff;
+     text-align: center;
+     margin-bottom: 1rem;
+ }
+ 

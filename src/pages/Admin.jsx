@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import React, { useState, useEffect } from 'react';
 import { deleteData, getInfo, patchData, posData } from "../services/fetch";
 import "../styles/Admin.css"
@@ -42,12 +43,27 @@ function Admin() {
             tiempoAEntrenar: tiempoAEntrenar,
             descripcion: descripcion
         }
+        if (tipoEntrenamiento === "" || tiempoAEntrenar === "" || descripcion === "") {
+            Swal.fire({
+                title: "Campos incompletos",
+                text: "Por favor, completa todos los campos.",
+                icon: "warning",
+                confirmButtonText: "OK",
+            });
+            return
+        }
         await posData(entrenos, "entrenos")
         setRecarga(!recarga)
 
     }
     async function eliminarEntreno(id) {
         await deleteData("entrenos", id)
+        Swal.fire({
+            title: "Eliminado",
+            text: "Entrenamiento Eliminado.",
+            icon: "danger",
+            confirmButtonText: "OK",
+        });
         setRecarga(!recarga)
     }
     async function editarEntreno(id) {
@@ -61,10 +77,26 @@ function Admin() {
 
 
         console.log(edicion);
+        if (tipoEntrenamientoE === "" || tiempoAEntrenarE === "" || descripcionE === "") {
+            Swal.fire({
+                title: "Campos incompletos",
+                text: "Por favor, completa todos los campos.",
+                icon: "warning",
+                confirmButtonText: "OK",
+            });
+            return
+        }
 
 
 
         await patchData(edicion, "entrenos", id)
+        Swal.fire({
+            title: "Editado",
+            text: "Entrenamiento Editado.",
+            icon: "success",
+            confirmButtonText: "OK",
+        });
+
         setRecarga(!recarga)
         handleClose()
     }
